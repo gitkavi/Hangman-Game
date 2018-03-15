@@ -14,7 +14,8 @@ section{
     /* border-color: red; */
     
 }
-.message{
+
+#result{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .imgSection{
