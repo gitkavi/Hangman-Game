@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+
+    <title>Hangman Game</title>
+</head>
+<body>
+    <div class="header"><img src="assets/images/HangmanTitle.png"></div>
+    <section>
+        <div class="container">
+            <div class="message"><span id="message"></span></div>
+            <div class="imgSection">
+                <div id="result" ></div>
+                <img id="matchingImg" src="assets/images/questionmark.jpg">
+            </div>
+            <div class="gameSection">
+                <h2>Guess the word : <span id="word"></span></h2>
+                <p>Wins:<span id="winScore"></span></p>
+                <p>Losses:<span id="loseScore"></span></p>
+                <p>Guesses Left:<span id="guessLeft"></span></p>
+                <p>Your guesses so far: <span id="guessedLetters"</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="assets/javascript/game.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+.header{
+    text-align: center;
+}
+section{
+    width:786px;
+    text-align: center;
+    /* border-style: solid; */
+    height:250px;
+    margin:10px auto;
+    padding:10px;
+    /* border-color: red; */
+    
+}
+.message{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.imgSection{
+    border-style: solid;
+    width: 370px;
+    height:auto;
+    float: left;
+}
+.imgSection img{
+    width:200px;
+    height: 200px;
+    padding:10px;
+}
+.gameSection{
+    border-style: solid;
+    float: right;
+    text-align: left;
+    width: 370px;
+    height:224px;
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
