@@ -44,7 +44,7 @@ document.onkeyup = function (event) {
         var userGuess = (event.key).toLowerCase();
 
         if (play){
-            document.getElementById("message").innerHTML = "Press any key to start!!";
+            document.getElementById("result").innerHTML = "";
             document.getElementById("matchingImg").src = "assets/images/questionmark.jpg";
         } 
 
@@ -78,7 +78,7 @@ document.onkeyup = function (event) {
             console.log(imageArray[imgIndex]);
             var src = "assets/images/" + imageArray[imgIndex];
             document.getElementById("matchingImg").src = src;  
-            //document.getElementById("message").innerHTML = "Press any key to start!!";
+            document.getElementById("result").innerHTML = computerGuess;
             reset();
         }
 
@@ -88,7 +88,7 @@ document.onkeyup = function (event) {
             document.getElementById("loseScore").innerHTML = losses;
             var src = "assets/images/" + imageArray[imgIndex];
             document.getElementById("matchingImg").src = src;
-            //document.getElementById("message").innerHTML = "Press any key to start!!";
+            document.getElementById("result").innerHTML = computerGuess;
             reset();            
         }
     }
@@ -111,8 +111,6 @@ function reset() {
     guessedLetter = []; //clears the guessed letter array
     document.getElementById("guessedLetters").innerHTML = guessedLetter; //displays the new cleared array 
     play = true;    
-    // document.getElementById("matchingImg").src = "assets/images/questionmark.jpg";
-
 }
 
 //Function to insert the correctly guessed letters in the blank
